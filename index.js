@@ -1,11 +1,20 @@
 'use strict';
 
 const path = require('path');
+const fs = require('fs');
+
+function checkVersion(packagePostfix, file) {
+  const local = path.join(__dirname, `node_modules/eslint-config-${packagePostfix}/${file}.js`);
+  if (fs.existsSync(local)) {
+    return local;
+  }
+  return packagePostfix;
+}
 
 module.exports = {
   "extends": [
-    path.join(__dirname, 'node_modules/eslint-config-airbnb-base/index.js'),
-    path.join(__dirname, 'node_modules/eslint-config-meetic/configurations/es6.js'),
+    checkVersion('airbnb-base', 'index.js'),
+    checkVersion('meetic', 'configurations/es6.js'),
   ],
   "rules": {
     "prefer-const": 1,

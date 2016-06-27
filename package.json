@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-brander",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "using in Brander",
   "keywords": [
     "code checker",
@@ -30,10 +30,10 @@
   "homepage": "https://github.com/Branderstudio/eslint-config-brander",
   "dependencies": {
     "eslint-config-airbnb-base": "3.0.1",
-    "eslint-config-meetic": "2.0.0",
-    "eslint-plugin-import": "^1.9.2"
+    "eslint-config-meetic": "2.0.0"
   },
   "peerDependencies": {
-    "eslint": "^2.13.1"
+    "eslint": "^2.13.1",
+    "eslint-plugin-import": "^1.9.2"
   }
 }
