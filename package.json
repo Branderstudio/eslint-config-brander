@@ -2,6 +2,18 @@
   "name": "eslint-config-brander",
   "version": "0.0.1",
   "description": "using in Brander",
+  "keywords": [
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "eslint-config",
+    "eslint brander",
+    "eslintconfig",
+    "style checker",
+    "style linter",
+    "brander"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +27,13 @@
   "bugs": {
     "url": "https://github.com/Branderstudio/eslint-config-brander/issues"
   },
-  "homepage": "https://github.com/Branderstudio/eslint-config-brander"
+  "homepage": "https://github.com/Branderstudio/eslint-config-brander",
+  "dependencies": {
+    "eslint-config-airbnb-base": "3.0.1",
+    "eslint-config-meetic": "2.0.0",
+    "eslint-plugin-import": "^1.9.2"
+  },
+  "peerDependencies": {
+    "eslint": "^2.13.1"
+  }
 }
